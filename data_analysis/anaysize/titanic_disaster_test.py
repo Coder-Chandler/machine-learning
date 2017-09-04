@@ -222,7 +222,7 @@ def test(Pclass, Sex, Age, SibSp, Parch, Fare, Embarked):
 print(test(Pclass, Sex, Age, SibSp, Parch, Fare, Embarked))
 
 """
-print("\n------------------------以上:查看预测---------------------------\n")
+print("\n------------------------以上查看预测---------------------------\n")
 
 
 """
@@ -248,7 +248,7 @@ predictions[predictions <=.5] = 0
 # 计算predictions并赋值予accuracy
 accuracy = len(predictions[predictions == titanic["Survived"]]) / len(predictions)
 print(accuracy)
-
+print("\n------------------------以上查看预测---------------------------\n")
 
 """
 04.逻辑回归
@@ -270,5 +270,124 @@ scores = cross_validation.cross_val_score(alg, titanic[predictors], titanic["Sur
 
 # 求scores的平均值并输出
 print(scores.mean())
+print("\n------------------------以上查看scores的平均值---------------------------\n")
+"""
+05.测试集
+
+逻辑回归的结果差强人意，之后还可以尝试更多的方法再进一步优化。为向Kaggle竞赛提交结果，需要将训练集上的处理应用到测试集上。
+首先是数据清洗：
+"""
+titanic_test = pd.read_csv("http://jizhi-10061919.file.myqcloud.com/kaggle_sklearn/titanic_test.csv")
+
+# 用中位数替换"Age"的缺失数据
+titanic_test["Age"] = titanic_test["Age"].fillna(titanic["Age"].median())
+
+# 用中位数替换"Fare"的缺失数据
+titanic_test["Fare"] = titanic_test["Fare"].fillna(titanic_test["Fare"].median())
+
+# 将"Sex"和"Embarked"数值化
+titanic_test.loc[titanic_test["Sex"] == "male", "Sex"] = 1
+titanic_test.loc[titanic_test["Sex"] == "female", "Sex"] = 0
+
+titanic_test["Embarked"] = titanic_test["Embarked"].fillna("S")
+titanic_test.loc[titanic_test["Embarked"] == "S", "Embarked"] = 0
+titanic_test.loc[titanic_test["Embarked"] == "C", "Embarked"] = 1
+titanic_test.loc[titanic_test["Embarked"] == "Q", "Embarked"] = 2
+print(titanic_test)
+print("\n------------------------以上查看测试集titanic_test---------------------------\n")
+"""
+06. 生成提交文件
+
+提交文件也是.csv格式，由乘客ID和相应预测结果构成。生成文件的命令是submission.to_csv("kaggle.csv", index=False)
+"""
+# 初始化逻辑回归类
+alg = LogisticRegression(random_state=1)
+
+# 训练算法
+alg.fit(titanic[predictors], titanic["Survived"])
+
+# 对测试集做预测
+predictions = alg.predict(titanic_test[predictors])
+print(predictions)
+print("\n------------------------以上查看预测---------------------------\n")
+# 创建新的dataframe对象submission，仅含"PassengerID"和"Survived"两列。
+submission = pd.DataFrame({
+        "PassengerId": titanic_test["PassengerId"],
+        "Survived": predictions
+    })
+
+# 将submission输出为.csv格式的提交文件
+submission.to_csv("kaggle.csv", index=False)
 
 
+
+print("\n------------------------以下泰坦尼克号事故分析 03 进阶模型---------------------------\n\n\n")
+
+
+
+
+
+
+
+
+# _*_ coding:utf-8 _*_
+
+# 泰坦尼克号事故分析 03 进阶模型
+
+"""
+01. 随机森林简介
+
+随机森林(Random Forest)的基本单元是决策树(Decision Tree)，决策树可以提炼出数据中的非线性趋势，因此可用于分类和回归。
+
+Age	Sex	Survived
+38	0	1
+26	0	1
+28	1	1
+35	1	0
+很明显Age和Survied之间没有明确的线性关系，35岁的不幸罹难，26和38岁的却幸存了下来。回归可能行不通的情况下，
+改用决策树来挖掘Age,Sex和Survived之间的关系：从根节点(Root)出发，持续分叉直至形成叶节点(Leave)。
+
+初始分叉。Sex为0的行向左，为1的向右。
+根节点左边的全部存活，故设为叶节点并为Survived赋值1。
+右边分组输出不一，所以继续基于Age列分叉，得到两个叶节点。
+使用此决策树判断一个新行：
+
+Age	Sex	Survived
+22	1	?
+依上例，首先划分到右边然后到左边，预测结果是幸存(Survived=1)。
+但如果我们代入训练集第一个样本(Age=22, Sex=1, Survived=0)会发现这个预测并不对，这是因为训练集过小所致。
+
+决策树有一个很大的问题，就是对训练数据的过拟合(Overfit)。因为通过分叉，我们创建了一颗非常“深”的决策树，
+最终得到的规律受训练数据中奇点（噪音）的影响，不能一般化地推广到新数据集。
+
+随机森林算法应运而生，随机森林包括成百上千的决策树，这些树的输入数据和分叉依据都经过一定的随机化处理。
+每个决策树对应的都是训练集的随机一部分，每次分叉也是基于某列的一部分数据。最后对所有树取平均，把过拟合的风险降至最低。
+"""
+
+"""
+02. 随机森林实现
+
+训练数据集已导入并存为变量titanic。
+
+使用titanic[predictors]预测titanic["Survived"]，并将交叉验证得分赋值予scores。
+创建KFold对象，指定n_folds=3。
+使用cross_validation.cross_val_score()，将KFold对象传递给参数cv。 请按注释提示，补完整个程序
+"""
+# 随机森林与交叉验证
+import pandas as pd
+from sklearn import cross_validation
+from sklearn.ensemble import RandomForestClassifier
+#titanic = pd.read_csv("/Users/yinchuchu/Desktop/Data/titanic/train.csv")
+predictors = ["Pclass", "Sex", "Age", "SibSp", "Parch", "Fare", "Embarked"]
+
+# n_estimators：决策树的数量
+# min_samples_split：单个分叉包含的最小行数
+# min_samples_leaf：单个叶节点的最小样本数量
+alg = RandomForestClassifier(random_state=1, n_estimators=10, min_samples_split=2, min_samples_leaf=1)
+
+# 计算交叉验证的得分
+kf = cross_validation.KFold(titanic.shape[0], n_folds=3, random_state=1)
+scores = cross_validation.cross_val_score(alg, titanic[predictors], titanic["Survived"], cv=kf)
+
+# 输出得分的平均值
+print(scores.mean())
