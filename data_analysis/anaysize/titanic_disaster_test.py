@@ -109,7 +109,7 @@ titanic.loc[titanic["Sex"] == "male", "Sex"] = 1
 titanic.loc[titanic["Sex"] == "female", "Sex"] = 0
 # 查看用0，1替换male,female之后的dataframe描述信息
 print(titanic.head(5))# 查看用0，1替换male,female之后的dataframe前5行展示
-print("\n-------------------------以上用0，1替换male,female之后的dataframe前5行展示-----------------------------\n")
+print("\n-------------------------以上用0，1替换male,female之后的dataframe前5行展示------------------------------\n")
 
 """
 05.转换“登船地”列
