@@ -222,7 +222,7 @@ def test(Pclass, Sex, Age, SibSp, Parch, Fare, Embarked):
 print(test(Pclass, Sex, Age, SibSp, Parch, Fare, Embarked))
 
 """
-print("\n------------------------以上查看预测---------------------------\n")
+print("\n------------------------以上查看预测-----------------------------\n")
 
 
 """
