@@ -194,7 +194,7 @@ for train, test in kf:
     predictions.append(test_predictions)
     # print("train:\n %s" % train)
     # print("test:\n %s" % test)
-# print("\n------------------------以上查看for循环中的train---------------------------\n")
+# print("\n------------------------以上查看for循环中的train-----------------------------\n")
 print(predictions)
 print(alg.intercept_)
 for i in zip(predictors, alg.coef_):
