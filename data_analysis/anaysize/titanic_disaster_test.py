@@ -248,7 +248,7 @@ predictions[predictions <=.5] = 0
 # 计算predictions并赋值予accuracy
 accuracy = len(predictions[predictions == titanic["Survived"]]) / len(predictions)
 print(accuracy)
-print("\n------------------------以上查看预测---------------------------\n")
+print("\n---------------------------以上查看预测------------------------------\n")
 
 """
 04.逻辑回归
