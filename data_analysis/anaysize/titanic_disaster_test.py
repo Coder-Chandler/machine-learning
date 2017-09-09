@@ -373,7 +373,7 @@ Age	Sex	Survived
 创建KFold对象，指定n_folds=3。
 使用cross_validation.cross_val_score()，将KFold对象传递给参数cv。 请按注释提示，补完整个程序
 """
-# 随机森林与交叉验证
+# 随机森林和交叉验证
 import pandas as pd
 from sklearn import cross_validation
 from sklearn.ensemble import RandomForestClassifier
