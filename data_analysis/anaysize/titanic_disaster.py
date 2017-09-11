@@ -157,3 +157,88 @@ DataFrame对象的.apply()方法可以轻松地实现这些功能，将自定义
 :右边的函数将应用到x上并返回输出结果。.apply方法会将所有输出结果生成一个新的列。
 
 """
+# 生成新特征列：家庭规模
+titanic["FamilySize"] = titanic["SibSp"] + titanic["Parch"]
+print(titanic["FamilySize"])
+print("\n---------------------------------以上输出新特征列:家庭规模----------------------------------------\n")
+# 用.apply()方法生成新特征列：姓名长度
+titanic["NameLength"] = titanic["Name"].apply(lambda x: len(x))
+print(titanic["NameLength"])
+print("\n---------------------------------以上输出新特征列:姓名长度----------------------------------------\n")
+
+"""
+05. 称谓
+
+从乘客的姓名中将称谓如Master., Mr., Mrs.等单独提取出来，有的称谓很常用，有的称谓则只有个别人专享，可能是贵族或授勋。
+
+首先利用正则表达式提取称谓，再映射到某个整数值，之后生成一个新的数值特征列。
+"""
+# 正则表达式提取特征
+import re
+
+# 从姓名中提取称谓的函数
+def get_title(name):
+    # 正则表达式检索称谓，称谓总以大写字母开头并以句点结尾
+    title_search = re.search(' ([A-Za-z]+)\.', name)
+    # 如果称谓存在则返回其值
+    if title_search:
+        return title_search.group(1)
+    return ""
+
+# 创建一个新的Series对象titles，统计各个头衔出现的频次
+titles = titanic["Name"].apply(get_title)
+print(pd.value_counts(titles))
+print("\n---------------------------------以上输出各个头衔出现的频次----------------------------------------\n")
+# 将每个称谓映射到一个整数，有些太少见的称谓可以压缩到一个数值
+title_mapping = {"Mr": 1, "Miss": 2, "Mrs": 3, "Master": 4, "Dr": 5, "Rev": 6, "Major": 7, "Col": 7, "Mlle": 8, "Mme": 8, "Don": 9, "Lady": 10, "Countess": 10, "Jonkheer": 10, "Sir": 9, "Capt": 7, "Ms": 2}
+for k,v in title_mapping.items():
+    titles[titles == k] = v
+
+# 验证转换结果
+print(pd.value_counts(titles))
+print("\n---------------------------------以上输出各个头衔转换成数字后出现的频次----------------------------------------\n")
+# Add in the title column.
+titanic["Title"] = titles # 增加头衔列表
+print(titanic.head(5))
+print("\n---------------------------------以上把Title（头衔）加入表中之后的前5行数据----------------------------------------\n")
+
+"""
+06. 家庭组
+
+我们可以生成一个新的特征来指示某位乘客属于哪个家庭，因为幸存者很大程度上依靠家人和身边的人互助互救。
+“家庭ID”通过连接姓氏和FamilySize生成，再映射成一个整数特征。
+"""
+import operator
+
+# 映射姓氏到家庭ID的字典
+family_id_mapping = {}
+
+# 从行信息提取家庭ID的函数
+def get_family_id(row_info):
+    # 分割逗号获取姓氏
+    last_name = row_info["Name"].split(",")[0]
+    # 创建家庭ID列表
+    family_id = "{0}{1}".format(last_name, row_info["FamilySize"])
+    # 从映射中查询ID
+    if family_id not in family_id_mapping:
+        if len(family_id_mapping) == 0:
+            current_id = 1
+        else:
+            # 遇到新的家庭则将其ID设为当前最大ID+1
+            current_id = (max(family_id_mapping.items(), key=operator.itemgetter(1))[1] + 1)
+        family_id_mapping[family_id] = current_id
+    return family_id_mapping[family_id]
+
+# 用.apply()方法获得家庭ID
+family_ids = titanic.apply(get_family_id, axis=1)
+print(family_ids)
+print("\n---------------------------------以上输出家庭id----------------------------------------\n")
+# 家庭数量过多，所以将所有人数小于3的家庭压缩成一类
+family_ids[titanic["FamilySize"] < 3] = -1
+
+# 输出每个家庭ID的数量
+print(pd.value_counts(family_ids))
+print("\n---------------------------------以上输出每个家庭id的个数----------------------------------------\n")
+titanic["FamilyId"] = family_ids
+print(titanic.head(8))
+print("\n---------------------------------以上把家庭id加入表中之后的前8行数据----------------------------------------\n")
