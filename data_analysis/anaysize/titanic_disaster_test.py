@@ -376,6 +376,7 @@ Age	Sex	Survived
 # 随机森林和交叉验证
 import pandas as pd
 from sklearn import cross_validation
+
 from sklearn.ensemble import RandomForestClassifier
 #titanic = pd.read_csv("/Users/yinchuchu/Desktop/Data/titanic/train.csv")
 predictors = ["Pclass", "Sex", "Age", "SibSp", "Parch", "Fare", "Embarked"]

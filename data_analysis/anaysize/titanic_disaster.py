@@ -238,7 +238,166 @@ family_ids[titanic["FamilySize"] < 3] = -1
 
 # 输出每个家庭ID的数量
 print(pd.value_counts(family_ids))
-print("\n---------------------------------以上输出每个家庭id的个数----------------------------------------\n")
+print("\n---------------------------------以上输出每一类家庭的id的个数----------------------------------------\n")
 titanic["FamilyId"] = family_ids
 print(titanic.head(8))
 print("\n---------------------------------以上把家庭id加入表中之后的前8行数据----------------------------------------\n")
+
+"""
+07. 最佳特征
+
+所有机器学习任务中，最重要的是特征工程，目前的案例中就尚有很多特征待挖掘。我们还需要从特征中遴选出哪些是最有用的，
+比如单变量特征提取，就是逐列计算找出哪一列与预测目标(Survived)相关性最高。
+
+Scikit-learn提供选择特征用的函数SelectKBest，自动从数据中提取最佳特征。
+"""
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.feature_selection import SelectKBest, f_classif
+
+predictors = ["Pclass", "Sex", "Age", "SibSp", "Parch", "Fare", "Embarked", "FamilySize", "Title", "FamilyId"]
+
+# 特征选择
+selector = SelectKBest(f_classif, k=5)
+selector.fit(titanic[predictors], titanic["Survived"])
+# 得到每个特征列的p值，再转换为交叉验证得分
+scores = -np.log10(selector.pvalues_)
+print(scores)
+print("\n---------------------------------以上是每个特征列的p值，再转换为交叉验证得分----------------------------------------\n")
+# 绘制得分图像，观察哪个特征是最好的
+plt.bar(range(len(predictors)), scores)
+plt.xticks(range(len(predictors)), predictors, rotation='vertical')
+plt.show()
+
+# 只选取最好的四个特征
+predictors = ["Pclass", "Sex", "Fare", "Title"]
+
+alg = RandomForestClassifier(random_state=1, n_estimators=50, min_samples_split=8, min_samples_leaf=4)
+
+# 计算交叉验证得分
+scores = cross_validation.cross_val_score(alg, titanic[predictors], titanic["Survived"], cv=3)
+print(scores)
+print("\n---------------------------------计算交叉验证得分----------------------------------------\n")
+# 输出交叉验证得分的均值
+print(scores.mean())
+print("\n---------------------------------计算交叉验证得分的平均值----------------------------------------\n")
+
+"""
+08. 梯度提升(Gradient Boosting)
+
+梯度提升是另一种基于决策树的分类器，与随机森林不同，梯度提升中的决策树是一个接一个生成的，并将上一个树的误差迭代到下一个树当中。
+所以每个决策树都是建立在之前所有的树上，如果树太多的话，这会导致过拟合，在本例中我们限制树的数量上限为25。
+
+另一预防过拟合的策略是在梯度提升中限制每个树的深度，这里限制为3层。
+
+09. 整合
+
+为了改进预测精度可以尝试整合不同的分类器，也就是对多个分类器的拟合结果取平均值。一般来说，整合的模型的差异化越大，预测精度越高。
+差异化代表模型根据不同的特征列或不同的算法产生预测结果。整合随机森林和决策树大概起不到太大作用，因为它们太接近了，
+但是线性回归和随机森林的整合结果就好得多。需要注意的是，参与整合的分类器首先需要本身就有差不多的精度，如果其中一个分类器太差，
+最终结果可能还不如不整合。
+
+针对本题，我们整合一个逻辑回归和梯度提升分类器，其中逻辑回归采用最线性的特征，梯度提升则面向所有特征。
+两个分类器的原始输出（0到1的概率）首先求平均值，再把高于0.5的映射为1；低于或等于0.5的映射为0。
+"""
+from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.cross_validation import KFold
+import numpy as np
+
+algorithms = [
+    [GradientBoostingClassifier(random_state=1, n_estimators=25, max_depth=3),
+     ["Pclass", "Sex", "Age", "Fare", "Embarked", "FamilySize", "Title", "FamilyId"]],
+    [LogisticRegression(random_state=1), ["Pclass", "Sex", "Fare", "FamilySize", "Title", "Age", "Embarked"]]
+]
+
+# 初始化交叉验证
+kf = KFold(titanic.shape[0], n_folds=3, random_state=1)
+
+predictions = []
+for train, test in kf:
+    train_target = titanic["Survived"].iloc[train]
+    full_test_predictions = []
+    # 对每个交叉验证分组，分别使用两种算法进行分类
+    for alg, predictors in algorithms:
+        # 用训练集拟合算法
+        alg.fit(titanic[predictors].iloc[train,:], train_target)
+        # 选择并预测测试集上的输出
+        # .astype(float) 可以把dataframe转换为浮点数类型
+        test_predictions = alg.predict_proba(titanic[predictors].iloc[test,:].astype(float))[:,1]
+        full_test_predictions.append(test_predictions)
+    # 对两个预测结果取平均值
+    test_predictions = (full_test_predictions[0] + full_test_predictions[1]) / 2
+    # 大于0.5的映射为1；小于或等于的映射为0
+    test_predictions[test_predictions <= .5] = 0
+    test_predictions[test_predictions > .5] = 1
+    predictions.append(test_predictions)
+
+# 将预测结果存入一个数组
+predictions = np.concatenate(predictions, axis=0)
+print(predictions)
+# 与训练集比较以计算精度
+accuracy = sum(predictions[predictions == titanic["Survived"]]) / len(predictions)
+
+print(accuracy)
+
+"""
+10. 测试集数据清洗
+"""
+titanic_test = pd.read_csv("http://jizhi-10061919.file.myqcloud.com/kaggle_sklearn/titanic_test.csv")
+# 添加“称谓”列
+titles = titanic_test["Name"].apply(get_title)
+
+# 在映射字典里添加“Dona”这个称谓，因为训练集里没有
+title_mapping = {"Mr": 1, "Miss": 2, "Mrs": 3, "Master": 4, "Dr": 5, "Rev": 6, "Major": 7, "Col": 7, "Mlle": 8, "Mme": 8, "Don": 9, "Lady": 10, "Countess": 10, "Jonkheer": 10, "Sir": 9, "Capt": 7, "Ms": 2, "Dona": 10}
+for k,v in title_mapping.items():
+    titles[titles == k] = v
+titanic_test["Title"] = titles
+
+# 检查各个称谓的数量
+print(pd.value_counts(titanic_test["Title"]))
+
+# 添加“家庭规模”列
+titanic_test["FamilySize"] = titanic_test["SibSp"] + titanic_test["Parch"]
+
+# 添加“家庭ID”列
+print(family_id_mapping)
+
+family_ids = titanic_test.apply(get_family_id, axis=1)
+family_ids[titanic_test["FamilySize"] < 3] = -1
+titanic_test["FamilyId"] = family_ids
+
+# 添加“姓名长度”列
+titanic_test["NameLength"] = titanic_test["Name"].apply(lambda x: len(x))
+
+"""
+11. 测试集机器学习
+"""
+predictors = ["Pclass", "Sex", "Age", "Fare", "Embarked", "FamilySize", "Title", "FamilyId"]
+
+algorithms = [
+    [GradientBoostingClassifier(random_state=1, n_estimators=25, max_depth=3), predictors],
+    [LogisticRegression(random_state=1), ["Pclass", "Sex", "Fare", "FamilySize", "Title", "Age", "Embarked"]]
+]
+
+full_predictions = []
+for alg, predictors in algorithms:
+    # 用训练集拟合模型
+    alg.fit(titanic[predictors], titanic["Survived"])
+    # 将所有数据转换为浮点数，用测试集做预测
+    predictions = alg.predict_proba(titanic_test[predictors].astype(float))[:,1]
+    full_predictions.append(predictions)
+
+# 梯度提升的预测效果更好，所以赋予更高的权重
+predictions = (full_predictions[0] * 3 + full_predictions[1]) / 4
+
+# 将predictions转换为0/1：小于或等于0.5 -> 0；大于0.5 -> 1
+predictions[predictions <= .5] = 0
+predictions[predictions > .5] = 1
+# 将predicitons全部转换为整数类型
+predictions = predictions.astype(int)
+# 生成新的DataFrame对象submission，内含"PassengerId"和"Survived"两列
+submission = pd.DataFrame({
+        "PassengerId": titanic_test["PassengerId"],
+        "Survived": predictions
+    })
