@@ -263,7 +263,7 @@ selector.fit(titanic[predictors], titanic["Survived"])
 # 得到每个特征列的p值，再转换为交叉验证得分
 scores = -np.log10(selector.pvalues_)
 print(scores)
-print("\n---------------------------------以上是每个特征列的p值，再转换为交叉验证得分----------------------------------------\n")
+print("\n---------------------------------以上是每个特征列的p值，再转换为交叉验证得分---------------------------------------\n")
 # 绘制得分图像，观察哪个特征是最好的
 plt.bar(range(len(predictors)), scores)
 plt.xticks(range(len(predictors)), predictors, rotation='vertical')
