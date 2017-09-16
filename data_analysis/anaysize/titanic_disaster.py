@@ -277,7 +277,7 @@ alg = RandomForestClassifier(random_state=1, n_estimators=50, min_samples_split=
 # 计算交叉验证得分
 scores = cross_validation.cross_val_score(alg, titanic[predictors], titanic["Survived"], cv=3)
 print(scores)
-print("\n---------------------------------计算交叉验证得分--------------------------------------\n")
+print("\n-----------------------------------计算交叉验证得分--------------------------------------\n")
 # 输出交叉验证得分的均值
 print(scores.mean())
 print("\n---------------------------------计算交叉验证得分的平均值---------------------------------------\n")
