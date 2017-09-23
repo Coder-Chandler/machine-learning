@@ -3,7 +3,7 @@ from numpy import *
 import operator
 from os import listdir
 
-
+# 转化为1*1024的特征向量
 def img2vector(filename):
     returnvect = zeros((1, 1024))
     fr = open(filename)
@@ -13,21 +13,19 @@ def img2vector(filename):
             returnvect[0, 32*i+j] = int(line_str[j])
     return returnvect
 
-file = "/Users/yinchuchu/Desktop/MachineLearning-master/kNN/use_Python_and_NumPy/trainingDigits/6_1.txt"
-
 
 # 分类主体程序，计算欧式距离，选择距离最小的k个，返回k个中出现频率最高的类别
 # inX是所要测试的向量
 # dataSet是训练样本集，一行对应一个样本。dataSet对应的标签向量为labels
 # k是所选的最近邻数目
 def classify0(inX, dataSet, labels, k):
-    dataSetSize = dataSet.shape[0]                       # shape[0]得出dataSet的行数，即样本个数
-    diffMat = tile(inX, (dataSetSize,1)) - dataSet       # tile(A,(m,n))将数组A作为元素构造m行n列的数组
+    dataSetSize = dataSet.shape[0]  # shape[0]得出dataSet的行数，即样本个数
+    diffMat = tile(inX, (dataSetSize,1)) - dataSet  # tile(A,(m,n))将数组A作为元素构造m行n列的数组
     sqDiffMat = diffMat**2
-    sqDistances = sqDiffMat.sum(axis=1)                  # array.sum(axis=1)按行累加，axis=0为按列累加
+    sqDistances = sqDiffMat.sum(axis=1)  # array.sum(axis=1)按行累加，axis=0为按列累加
     distances = sqDistances**0.5
-    sortedDistIndicies = distances.argsort()             # array.argsort()，得到每个元素的排序序号
-    classCount={}                                        # sortedDistIndicies[0]表示排序后排在第一个的那个数在原来数组中的下标
+    sortedDistIndicies = distances.argsort()  # array.argsort()，得到每个元素的排序序号
+    classCount={}  # sortedDistIndicies[0]表示排序后排在第一个的那个数在原来数组中的下标
     for i in range(k):
         voteIlabel = labels[sortedDistIndicies[i]]
         classCount[voteIlabel] = classCount.get(voteIlabel,0) + 1  # get(key,x)从字典中获取key对应的value，没有key的话返回0
