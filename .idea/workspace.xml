@@ -2,6 +2,156 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1378728-c927-43b7-b67f-038678aea06d" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/0_1.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/0_1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/0_2.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/0_2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/0_3.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/0_3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/0_4.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/0_4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/0_5.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/0_5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/1_1.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/1_1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/1_2.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/1_2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/1_3.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/1_3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/1_4.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/1_4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/1_5.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/1_5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/2_1.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/2_1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/2_2.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/2_2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/2_3.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/2_3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/2_4.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/2_4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/2_5.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/2_5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/3_1.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/3_1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/3_2.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/3_2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/3_3.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/3_3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/3_4.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/3_4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/3_5.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/3_5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/4_1.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/4_1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/4_2.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/4_2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/4_3.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/4_3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/4_4.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/4_4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/4_5.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/4_5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/5_1.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/5_1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/5_2.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/5_2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/5_3.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/5_3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/5_4.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/5_4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/5_5.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/5_5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/6_1.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/6_1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/6_2.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/6_2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/6_3.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/6_3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/6_4.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/6_4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/6_5.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/6_5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/7_1.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/7_1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/7_2.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/7_2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/7_3.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/7_3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/7_4.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/7_4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/7_5.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/7_5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/8_1.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/8_1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/8_2.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/8_2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/8_3.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/8_3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/8_4.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/8_4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/8_5.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/8_5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/9_1.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/9_1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/9_2.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/9_2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/9_3.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/9_3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/9_4.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/9_4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/testDigits/9_5.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/testfile/9_5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/0_1.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/0_1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/0_10.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/0_10.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/0_2.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/0_2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/0_3.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/0_3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/0_4.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/0_4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/0_5.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/0_5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/0_6.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/0_6.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/0_7.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/0_7.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/0_8.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/0_8.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/0_9.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/0_9.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/1_1.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/1_1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/1_10.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/1_10.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/1_2.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/1_2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/1_3.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/1_3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/1_4.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/1_4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/1_5.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/1_5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/1_6.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/1_6.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/1_7.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/1_7.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/1_8.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/1_8.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/1_9.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/1_9.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/2_1.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/2_1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/2_10.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/2_10.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/2_2.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/2_2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/2_3.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/2_3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/2_4.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/2_4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/2_5.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/2_5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/2_6.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/2_6.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/2_7.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/2_7.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/2_8.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/2_8.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/2_9.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/2_9.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/3_1.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/3_1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/3_10.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/3_10.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/3_2.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/3_2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/3_3.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/3_3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/3_4.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/3_4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/3_5.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/3_5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/3_6.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/3_6.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/3_7.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/3_7.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/3_8.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/3_8.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/3_9.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/3_9.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/4_1.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/4_1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/4_10.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/4_10.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/4_2.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/4_2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/4_3.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/4_3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/4_4.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/4_4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/4_5.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/4_5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/4_6.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/4_6.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/4_7.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/4_7.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/4_8.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/4_8.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/4_9.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/4_9.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/5_1.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/5_1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/5_10.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/5_10.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/5_2.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/5_2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/5_3.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/5_3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/5_4.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/5_4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/5_5.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/5_5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/5_6.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/5_6.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/5_7.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/5_7.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/5_8.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/5_8.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/5_9.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/5_9.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/6_1.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/6_1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/6_10.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/6_10.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/6_2.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/6_2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/6_3.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/6_3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/6_4.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/6_4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/6_5.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/6_5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/6_6.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/6_6.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/6_7.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/6_7.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/6_8.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/6_8.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/6_9.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/6_9.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/7_1.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/7_1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/7_10.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/7_10.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/7_2.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/7_2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/7_3.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/7_3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/7_4.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/7_4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/7_5.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/7_5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/7_6.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/7_6.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/7_7.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/7_7.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/7_8.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/7_8.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/7_9.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/7_9.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/8_1.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/8_1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/8_10.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/8_10.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/8_2.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/8_2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/8_3.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/8_3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/8_4.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/8_4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/8_5.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/8_5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/8_6.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/8_6.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/8_7.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/8_7.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/8_8.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/8_8.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/8_9.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/8_9.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/9_1.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/9_1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/9_10.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/9_10.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/9_2.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/9_2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/9_3.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/9_3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/9_4.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/9_4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/9_5.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/9_5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/9_6.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/9_6.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/9_7.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/9_7.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/9_8.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/9_8.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data_analysis/anaysize/trainingDigits/9_9.txt" afterPath="$PROJECT_DIR$/data_analysis/anaysize/trainingfile/9_9.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_analysis/anaysize/KNN.py" afterPath="$PROJECT_DIR$/data_analysis/anaysize/KNN.py" />
     </list>
@@ -13,15 +163,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/machine_learning$KNN.coverage" NAME="KNN Coverage Results" MODIFIED="1506255923583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_analysis/anaysize" />
+    <SUITE FILE_PATH="coverage/machine_learning$KNN.coverage" NAME="KNN Coverage Results" MODIFIED="1506349863534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_analysis/anaysize" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="KNN.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data_analysis/anaysize/KNN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="55" column="61" lean-forward="false" selection-start-line="55" selection-start-column="61" selection-end-line="55" selection-end-column="61" />
+            <state relative-caret-position="263">
+              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding>
                 <element signature="e#23#42#0" expanded="true" />
               </folding>
@@ -29,27 +179,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="numeric.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda/envs/machine_learning/lib/python3.6/site-packages/numpy/core/numeric.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42218">
-              <caret line="1938" column="0" lean-forward="false" selection-start-line="1938" selection-start-column="0" selection-end-line="1938" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="arrayprint.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda/envs/machine_learning/lib/python3.6/site-packages/numpy/core/arrayprint.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4840">
-              <caret line="220" column="0" lean-forward="false" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>testfile</find>
+      <find>trainingdigits_</find>
+      <find>trainingdigits</find>
+      <find>testDigits</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -90,8 +228,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -110,16 +246,32 @@
               <item name="data_analysis" type="462c0819:PsiDirectoryNode" />
               <item name="anaysize" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="machine-learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="machine-learning" type="462c0819:PsiDirectoryNode" />
+              <item name="data_analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="anaysize" type="462c0819:PsiDirectoryNode" />
+              <item name="testfile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="machine-learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="machine-learning" type="462c0819:PsiDirectoryNode" />
+              <item name="data_analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="anaysize" type="462c0819:PsiDirectoryNode" />
+              <item name="trainingfile" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -180,24 +332,24 @@
     <frame x="0" y="23" width="1440" height="804" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25250357" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.426844" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43018335" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6517533" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5344619" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1416309" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5344619" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -230,62 +382,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/data_analysis/anaysize/KNN.py</url>
-          <line>50</line>
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/data_analysis/anaysize/KNN.py</url>
-          <line>59</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/data_analysis/anaysize/KNN.py</url>
-          <line>68</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/data_analysis/anaysize/KNN.py</url>
-          <line>65</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/data_analysis/anaysize/KNN.py</url>
-          <line>66</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/data_analysis/anaysize/KNN.py</url>
-          <line>70</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/data_analysis/anaysize/KNN.py</url>
-          <line>71</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/data_analysis/anaysize/KNN.py</url>
-          <line>73</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/data_analysis/anaysize/KNN.py</url>
-          <line>82</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/data_analysis/anaysize/KNN.py</url>
-          <line>83</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/data_analysis/anaysize/KNN.py</url>
-          <line>84</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
@@ -327,6 +423,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/anaconda/envs/machine_learning/lib/python3.6/site-packages/numpy/core/numeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42636">
+          <caret line="1938" column="0" lean-forward="false" selection-start-line="1938" selection-start-column="0" selection-end-line="1938" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/envs/machine_learning/lib/python3.6/site-packages/numpy/core/arrayprint.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4840">
+          <caret line="220" column="0" lean-forward="false" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_analysis/anaysize/KNN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/anaconda/envs/machine_learning/lib/python3.6/site-packages/numpy/core/arrayprint.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4840">
@@ -429,7 +551,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_analysis/anaysize/testDigits/5_5.txt">
+    <entry file="file://$PROJECT_DIR$/data_analysis/anaysize/testfile/5_5.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-552">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -443,7 +565,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_analysis/anaysize/testDigits/3_3.txt">
+    <entry file="file://$PROJECT_DIR$/data_analysis/anaysize/testfile/3_3.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -458,10 +580,98 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data_analysis/anaysize/testfile/8_5.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2017.2/python_stubs/-1433016666/numpy/core/multiarray.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90992">
+          <caret line="4547" column="8" lean-forward="false" selection-start-line="4547" selection-start-column="8" selection-end-line="4547" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_analysis/anaysize/testfile/4_1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_analysis/anaysize/testfile/4_2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_analysis/anaysize/testfile/4_3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_analysis/anaysize/testfile/4_4.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_analysis/anaysize/testfile/4_5.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_analysis/anaysize/testfile/5_2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_analysis/anaysize/testfile/5_3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_analysis/anaysize/testfile/5_4.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_analysis/anaysize/trainingfile/3_9.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data_analysis/anaysize/KNN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="55" column="61" lean-forward="false" selection-start-line="55" selection-start-column="61" selection-end-line="55" selection-end-column="61" />
+        <state relative-caret-position="263">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding>
             <element signature="e#23#42#0" expanded="true" />
           </folding>
