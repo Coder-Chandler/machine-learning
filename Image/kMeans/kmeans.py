@@ -11,11 +11,11 @@ def point_avg(points):
     Returns a new point which is the center of all the points.
     """
     dimensions = len(points[0])
-    print dimensions
+    print(dimensions)
 
     new_center = []
 
-    for dimension in xrange(dimensions):
+    for dimension in range(dimensions):
         dim_sum = 0  # dimension sum
         for p in points:
             dim_sum += p[dimension]
@@ -59,7 +59,7 @@ def assign_points(data_points, centers):
     for point in data_points:
         shortest = ()  # positive infinity
         shortest_index = 0
-        for i in xrange(len(centers)):
+        for i in range(len(centers)):
             val = distance(point, centers[i])
             if val < shortest:
                 shortest = val
@@ -74,7 +74,7 @@ def distance(a, b):
     dimensions = len(a)
 
     _sum = 0
-    for dimension in xrange(dimensions):
+    for dimension in range(dimensions):
         difference_sq = (a[dimension] - b[dimension]) ** 2
         _sum += difference_sq
     return sqrt(_sum)
@@ -92,7 +92,7 @@ def generate_k(data_set, k):
     min_max = defaultdict(int)
 
     for point in data_set:
-        for i in xrange(dimensions):
+        for i in range(dimensions):
             val = point[i]
             min_key = 'min_%d' % i
             max_key = 'max_%d' % i
@@ -101,9 +101,9 @@ def generate_k(data_set, k):
             if max_key not in min_max or val > min_max[max_key]:
                 min_max[max_key] = val
 
-    for _k in xrange(k):
+    for _k in range(k):
         rand_point = []
-        for i in xrange(dimensions):
+        for i in range(dimensions):
             min_val = min_max['min_%d' % i]
             max_val = min_max['max_%d' % i]
 
