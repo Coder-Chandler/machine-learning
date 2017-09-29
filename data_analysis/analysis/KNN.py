@@ -128,7 +128,7 @@ def handwriting_guess():
             error_count += 1.0
     print("\n识别出错数量: %d" % error_count)
     print("\n识别错误率: %f" % (error_count / float(testfile_nums)))
-# 运行KNN算法识别手写数字
+# 运行KNN识别手写数字
 handwriting_guess()
 
 
