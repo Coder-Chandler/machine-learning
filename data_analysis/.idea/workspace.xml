@@ -29,8 +29,8 @@
       <file leaf-file-name="Statistics.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/StatisticsJob/Statistics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="154">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -55,6 +55,7 @@
         <option value="$PROJECT_DIR$/anaysize/titanic_disaster_test.py" />
         <option value="$PROJECT_DIR$/anaysize/titanic_disaster.py" />
         <option value="$PROJECT_DIR$/anaysize/KNN.py" />
+        <option value="$PROJECT_DIR$/StatisticsJob/Statistics.py" />
       </list>
     </option>
   </component>
@@ -112,7 +113,6 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -556,16 +556,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/StatisticsJob/Statistics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/anaysize/titanic_disaster.py" />
     <entry file="file://$PROJECT_DIR$/anaysize/titanic_disaster_test.py" />
     <entry file="file://$PROJECT_DIR$/anaysize/titanic_disaster.py" />
@@ -732,10 +722,18 @@
     <entry file="file://$PROJECT_DIR$/anaysize/titanic_disaster_test.py" />
     <entry file="file://$PROJECT_DIR$/testDigits/0_1.txt" />
     <entry file="file://$PROJECT_DIR$/anaysize/KNN.py" />
+    <entry file="file://$USER_HOME$/anaconda/envs/machine_learning/lib/python3.6/site-packages/pandas/util/_doctools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2214">
+          <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/StatisticsJob/Statistics.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="154">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
